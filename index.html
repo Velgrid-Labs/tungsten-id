@@ -22,16 +22,42 @@
     }
     
     p {
-      font-size: 20px;
+      font-size: 30px;
       color: white;
       font-weight: bold;
+    }
+
+    .banner {
+      max-width: 1000px;
+      width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      p {
+        font-size: 25px;
+      }
+
+      .banner {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      p {
+        font-size: 25px;
+      }
+
+      .banner {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="content">
-       <img src="Banner.png" alt="TungstenID Banner" class="banner" style="max-width: 1000px; height: auto;">
+       <img src="Banner.png" alt="TungstenID Banner" class="banner">
       <p>Coming Soon</p>
     </div>
   </div>
